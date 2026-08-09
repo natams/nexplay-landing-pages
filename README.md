@@ -5,7 +5,7 @@
 ### Live Demo
 https://natams.github.io/nexplay-landing-pages/
 
----
+
 
 ## Overview
 
@@ -23,7 +23,7 @@ Built with **HTML, CSS and vanilla JavaScript**.
 
 I kept the project intentionally lightweight and avoided adding frameworks or external libraries that were not necessary for this type of landing page.
 
----
+
 
 ## Why I used config files
 
@@ -49,7 +49,7 @@ or:
 
 `?variant=B`
 
----
+
 
 ## Casino
 
@@ -101,7 +101,7 @@ Another possible setup would allow a logged-out user to reveal a reward first an
 
 The exact flow would depend on the campaign rules.
 
----
+
 
 ## Sports
 
@@ -117,7 +117,7 @@ The fixtures, odds and rewards are demo content.
 
 <sub>In production, these would normally come from backend services or a live sports data feed.</sub>
 
----
+
 
 ## Responsive design
 
@@ -127,7 +127,7 @@ I also made layout decisions based on the content rather than simply stretching 
 
 For example, the Sports match cards keep the odds aligned even when longer team names wrap onto two lines.
 
----
+
 
 ## Fonts and external libraries
 
@@ -141,7 +141,7 @@ For the demo I used browser and system-available fonts and created the visual hi
 
 The same approach applies to JavaScript libraries. If vanilla JavaScript and CSS were enough, I preferred not to add another dependency.
 
----
+
 
 ## Accessibility and interaction
 
@@ -157,7 +157,7 @@ I included:
 
 <sub>A production release would still go through full keyboard, screen-reader and accessibility QA.</sub>
 
----
+
 
 ## Production setup
 
@@ -184,7 +184,7 @@ The important interaction events I would want to track include:
 `claim_clicked`  
 `login_clicked`
 
----
+
 
 ## Final note
 
