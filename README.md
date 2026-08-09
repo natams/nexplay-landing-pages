@@ -3,7 +3,7 @@
 <sub>Casino + Sports promotional landing page concepts created for the home assignment.</sub>
 
 ### Live Demo
-https://natams.github.io/nexplay-landing-pages-0/
+https://natams.github.io/nexplay-landing-pages/
 
 ## Overview
 
