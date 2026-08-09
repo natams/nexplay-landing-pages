@@ -1,0 +1,242 @@
+{
+  "seo": {
+    "title": "NexPlay Sports - Predict Today's Winner",
+    "description": "Choose a featured European match, make your prediction and reveal your NexPlay matchday reward."
+  },
+
+  "brand": {
+    "name": "NexPlay",
+    "logo": "img/logo.svg",
+    "logoAlt": "NexPlay",
+    "homeUrl": "../index.html"
+  },
+
+  "header": {
+    "signup": {
+      "label": "Sign Up",
+      "url": "#signup"
+    },
+    "login": {
+      "label": "Log In",
+      "url": "#login"
+    }
+  },
+
+  "campaign": {
+    "preHeader": "MATCHDAY REWARDS",
+
+    "headlineVariants": {
+      "A": "Predict Today's Winner",
+      "B": "Make Your Matchday Prediction"
+    },
+
+    "intro": "Choose one of today's featured matches, make your prediction and reveal your reward.",
+
+    "revealButton": {
+      "label": "Choose Your Match",
+      "ariaLabel": "View today's featured matches"
+    }
+  },
+
+  "matchSelection": {
+    "preHeader": "TODAY'S FEATURED MATCHES",
+    "title": "Choose Your Match",
+    "intro": "Select one outcome from any fixture.",
+    "selectionLabel": "Your selection",
+    "confirmButton": "Confirm Prediction"
+  },
+
+"matches": [
+  {
+    "id": "barcelona-inter",
+    "competition": "Champions League",
+    "kickoff": "Tonight · 20:00",
+    "homeTeam": {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "shortName": "BAR",
+      "logo": "img/barca-logo.webp"
+    },
+    "awayTeam": {
+      "id": "inter",
+      "name": "Inter Milan",
+      "shortName": "INT",
+      "logo": "img/im-logo.webp"
+    },
+    "predictionOptions": [
+      {
+        "id": "home",
+        "marketLabel": "1",
+        "label": "Barcelona",
+        "odds": "11/8"
+      },
+      {
+        "id": "draw",
+        "marketLabel": "X",
+        "label": "Draw",
+        "odds": "9/4"
+      },
+      {
+        "id": "away",
+        "marketLabel": "2",
+        "label": "Inter Milan",
+        "odds": "15/8"
+      }
+    ]
+  },
+  {
+    "id": "bayern-psg",
+    "competition": "Champions League",
+    "kickoff": "Tonight · 21:00",
+    "homeTeam": {
+      "id": "bayern",
+      "name": "Bayern Munich",
+      "shortName": "BAY",
+      "logo": "img/bm-logo.webp"
+    },
+    "awayTeam": {
+      "id": "psg",
+      "name": "Paris Saint-Germain",
+      "shortName": "PSG",
+      "logo": "img/psg-logo.webp"
+    },
+    "predictionOptions": [
+      {
+        "id": "home",
+        "marketLabel": "1",
+        "label": "Bayern Munich",
+        "odds": "6/5"
+      },
+      {
+        "id": "draw",
+        "marketLabel": "X",
+        "label": "Draw",
+        "odds": "5/2"
+      },
+      {
+        "id": "away",
+        "marketLabel": "2",
+        "label": "Paris Saint-Germain",
+        "odds": "21/10"
+      }
+    ]
+  },
+  {
+    "id": "real-milan",
+    "competition": "Champions League",
+    "kickoff": "Tomorrow · 20:45",
+    "homeTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "RMA",
+      "logo": "img/rm-logo.webp"
+    },
+    "awayTeam": {
+      "id": "milan",
+      "name": "AC Milan",
+      "shortName": "MIL",
+      "logo": "img/acm-logo.webp"
+    },
+    "predictionOptions": [
+      {
+        "id": "home",
+        "marketLabel": "1",
+        "label": "Real Madrid",
+        "odds": "8/11"
+      },
+      {
+        "id": "draw",
+        "marketLabel": "X",
+        "label": "Draw",
+        "odds": "11/4"
+      },
+      {
+        "id": "away",
+        "marketLabel": "2",
+        "label": "AC Milan",
+        "odds": "10/3"
+      }
+    ]
+  }
+],
+
+  "rewards": [
+    {
+      "id": "free-bet-10",
+      "label": "€10 Free Bet",
+      "description": "Create your account to activate your matchday reward."
+    },
+    {
+      "id": "free-bet-20",
+      "label": "€20 Free Bet",
+      "description": "Create your account to activate your matchday reward."
+    },
+    {
+      "id": "odds-boost-50",
+      "label": "50% Odds Boost",
+      "description": "Unlock an enhanced boost on a selected match."
+    }
+  ],
+
+  "rewardPanel": {
+    "label": "Your Matchday Reward",
+    "predictionLabel": "Your Prediction",
+    "claimButton": "Claim Now",
+    "claimUrl": "#signup",
+    "terms": "Eligibility and promotional terms apply. 18+.",
+    "ticketImage": "img/reward-ticket.webp",
+    "particlesImage": "img/reward-particles.webp"
+  },
+
+  "offerTerms": {
+    "summary": "18+ only. Promotional demo. Eligibility and offer terms apply.",
+    "details": "Demo promotion only. Rewards shown are illustrative and do not represent a live betting offer. In a production environment, eligibility, qualifying conditions, reward restrictions and expiry information would be supplied by the operator and displayed here."
+  },
+
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "image": "img/visa.webp",
+      "width": 64
+    },
+    {
+      "name": "Mastercard",
+      "image": "img/Mastercard.webp",
+      "width": 48
+    },
+    {
+      "name": "Neteller",
+      "image": "img/neteller.webp",
+      "width": 75
+    },
+    {
+      "name": "Skrill",
+      "image": "img/Skrill.webp",
+      "width": 64
+    },
+    {
+      "name": "Bitcoin",
+      "image": "img/bitcoin.webp",
+      "width": 64
+    }
+  ],
+
+  "legal": {
+    "text": "18+ only. Play responsibly. Terms and conditions apply.",
+
+    "links": [
+      {
+        "label": "Terms & Conditions",
+        "url": "#terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "url": "#privacy"
+      },
+      {
+        "label": "Responsible Gaming",
+        "url": "#responsible-gaming"
+      }
+    ]
+  }
+}

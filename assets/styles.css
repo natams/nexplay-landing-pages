@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #12071f;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    background: #12071f;
+    font-family: 'Anton', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body,
+button,
+a {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    transition: opacity 80ms ease, visibility 80ms ease;
+    background: radial-gradient(circle at 50% 45%, rgba(157, 0, 255, 0.28), transparent 38%), #12071f;
+}
+
+.loading-screen.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.loading-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-icon {
+    display: block;
+    width: 90px;
+    height: 90px;
+    transform-origin: 60% 54%;
+    animation: loading-icon-spin 900ms linear infinite;
+}
+
+@keyframes loading-icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #12071fc2;
+    z-index: 600;
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px 8px 15px;
+}
+
+.site-logo {
+    display: flex;
+    width: 145px;
+    align-items: center;
+}
+
+.site-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    margin: 8px 0px;
+}
+
+.login-link,
+.signup-link {
+    display: inline-flex;
+    min-height: 36px;
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: transform 180ms ease, background 180ms ease;
+}
+
+.login-link:hover {
+    background: linear-gradient(120deg, #194bff, #9d00ff, #ff308a);
+}
+
+.login-link::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(to right, #0e82ff, #bc50ff, #ff308a);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.login-link {
+    padding: 8px 12px 6px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #dedede;
+    position: relative;
+    background: #000000;
+}
+
+.signup-link {
+    padding: 12px 15px;
+    background: linear-gradient(120deg, #194bff, #9d00ff, #ff308a);
+    box-shadow: 0 8px 24px rgba(157, 0, 255, 0.34);
+}
+
+.signup-link:hover {
+    background: linear-gradient(120deg, #194bffb9, #9d00ffaf, #ff308aa1);
+}
+
+.payment-section {
+    position: relative;
+    z-index: 3;
+    padding: 22px 16px 26px;
+    text-align: center;
+    background: #12071f;
+}
+
+.payment-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px 42px;
+    margin: 0 auto;
+}
+
+.payment-logo {
+    width: auto;
+    height: 26px;
+    object-fit: contain;
+    opacity: 0.68;
+    filter: grayscale(1) brightness(1.65) contrast(0.85);
+}
+
+.legal-footer {
+    position: relative;
+    z-index: 3;
+    padding: 18px 16px 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.52);
+    background: #12071f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.legal-footer p {
+    max-width: 520px;
+    margin: 0 auto 8px;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+}
+
+.legal-links a {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (max-width: 389px) {
+
+    .login-link,
+    .signup-link {
+        font-size: 0.5em;
+        padding: 4px 8px;
+    }
+}
+
+/* INDEX PAGE */
+
+.index-body {
+    min-height: 100vh;
+    background: #12071f;
+}
+
+.index-page {
+    min-height: 100vh;
+}
+
+.experience-section {
+    padding: 110px 16px 60px;
+}
+
+.experience-heading {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.experience-heading p {
+    margin: 0 0 10px;
+    color: #ff4fa3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.experience-heading h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.experience-heading span {
+    display: block;
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.68);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.experience-grid {
+    display: grid;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.experience-card {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    background: #160822;
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.36);
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 79, 163, 0.45);
+    box-shadow:
+        0 28px 65px rgba(0, 0, 0, 0.46),
+        0 0 28px rgba(157, 0, 255, 0.14);
+}
+
+.experience-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.experience-image {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition:
+        transform 300ms ease;
+}
+
+.experience-card:hover .experience-image {
+    transform: scale(1.03);
+}
+
+.experience-card-content {
+    padding: 22px 20px 24px;
+}
+
+.experience-label {
+    margin: 0 0 7px;
+    color: #ff4fa3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.experience-card h2 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.experience-description {
+    min-height: 44px;
+    margin: 12px 0 22px;
+    color: rgba(255, 255, 255, 0.67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.experience-button {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px 14px;
+    border-radius: 11px;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 34%), linear-gradient(140deg, #194bff, #9d00ff 48%, #ff308a);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -4px 0 rgba(18, 7, 31, 0.32), 0 5px 0 #6f075800, 0 0 20px rgba(255, 48, 138, 0.692);
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 140ms ease, filter 140ms ease;
+}
+
+.experience-button:hover {
+    filter: brightness(1.1);
+}
+
+.experience-button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 389px) {
+    .site-logo {
+        width: 125px;
+    }
+
+    .login-link,
+    .signup-link {
+        min-height: 32px;
+        padding: 6px 9px;
+        font-size: 9px;
+    }
+
+    .experience-heading h1 {
+        font-size: 39px;
+    }
+
+    .experience-heading span {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    .site-header {
+        padding: 5px 24px 5px 60px;
+    }
+
+    .site-logo {
+        width: 145px;
+    }
+
+    .header-actions {
+        gap: 13px;
+    }
+
+    .login-link,
+    .signup-link {
+        min-height: 44px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) {
+    .experience-section {
+        padding: 115px 30px 80px;
+    }
+
+    .experience-heading {
+        margin-bottom: 42px;
+    }
+
+    .experience-heading h1 {
+        font-size: 64px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .experience-image {
+        height: 260px;
+    }
+
+    .experience-card-content {
+        padding: 25px 24px 28px;
+    }
+
+    .experience-card h2 {
+        font-size: 29px;
+    }
+}

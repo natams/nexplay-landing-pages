@@ -1,0 +1,179 @@
+{
+  "seo": {
+    "title": "NexPlay Casino - Daily Wish",
+    "description": "Spin today's wheel and reveal your daily casino reward."
+  },
+
+  "brand": {
+    "name": "NexPlay",
+    "logo": "img/logo.svg",
+    "logoAlt": "NexPlay",
+    "homeUrl": "../index.html"
+  },
+
+  "header": {
+    "signup": {
+      "label": "Sign Up",
+      "url": "#signup"
+    },
+
+    "login": {
+      "label": "Log In",
+      "url": "#login"
+    }
+  },
+
+  "campaign": {
+    "preHeader": "EVERYDAY FREE SPIN",
+
+    "headlineVariants": {
+      "A": "Spin Today's Wheel",
+      "B": "Make Your Daily Wish"
+    },
+
+    "intro": "Take your daily spin and reveal a surprise casino reward."
+  },
+
+  "wheel": {
+    "titleImage": "img/wheel-title.webp",
+    "discImage": "img/wheel-disc.webp",
+    "frameImage": "img/wheel-frame.webp",
+    "pointerImage": "img/wheel-pointer.webp",
+    "buttonImage": "img/wheel-spin-button.webp",
+
+    "spinDuration": 5000,
+    "extraTurns": 6,
+    "segmentCount": 6,
+    "segmentOffset": 0
+  },
+
+  "rewards": [
+    {
+      "id": "free-spins-50",
+      "label": "50 Free Spins",
+      "segmentIndex": 0,
+      "isWin": true
+    },
+    {
+      "id": "free-spins-75",
+      "label": "75 Free Spins",
+      "segmentIndex": 1,
+      "isWin": true
+    },
+    {
+      "id": "free-spins-100",
+      "label": "100 Free Spins",
+      "segmentIndex": 2,
+      "isWin": true
+    },
+    {
+      "id": "bonus-10",
+      "label": "€10 Bonus",
+      "segmentIndex": 3,
+      "isWin": true
+    },
+    {
+      "id": "free-spins-150",
+      "label": "150 Free Spins",
+      "segmentIndex": 4,
+      "isWin": true
+    },
+    {
+      "id": "no-reward",
+      "label": "No Reward",
+      "segmentIndex": 5,
+      "isWin": false
+    }
+  ],
+
+  "rewardModal": {
+    "win": {
+      "label": "Daily Reward Unlocked",
+      "titleTemplate": "You Won {{reward}}",
+      "description": "Your daily reward is ready to claim.",
+      "claimButton": "Log In to Claim",
+      "claimUrl": "#login"
+    },
+
+    "lose": {
+      "label": "Daily Spin Complete",
+      "title": "No Reward Today",
+      "description": "Better luck tomorrow."
+    },
+
+    "terms": "One promotional spin per eligible player. Eligibility and terms apply. 18+."
+  },
+
+"spinComplete": {
+  "label": "COME BACK TOMORROW",
+  "title": "Daily Spin Complete"
+},
+
+  "steps": [
+    {
+      "number": "1",
+      "title": "Spin the wheel"
+    },
+    {
+      "number": "2",
+      "title": "Reveal your reward"
+    },
+    {
+      "number": "3",
+      "title": "Claim your reward"
+    }
+  ],
+
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "image": "img/visa.webp",
+      "width": 64
+    },
+
+    {
+      "name": "Mastercard",
+      "image": "img/Mastercard.webp",
+      "width": 48
+    },
+
+    {
+      "name": "Neteller",
+      "image": "img/neteller.webp",
+      "width": 75
+    },
+
+    {
+      "name": "Skrill",
+      "image": "img/Skrill.webp",
+      "width": 64
+    },
+
+    {
+      "name": "Bitcoin",
+      "image": "img/bitcoin.webp",
+      "width": 64
+    }
+  ],
+
+  "legal": {
+    "text": "18+ only. Play responsibly. Terms and conditions apply.",
+
+    "links": [
+      {
+        "label": "Terms & Conditions",
+        "url": "#terms"
+      },
+
+      {
+        "label": "Privacy Policy",
+        "url": "#privacy"
+      },
+
+      {
+        "label": "Responsible Gaming",
+        "url": "#responsible-gaming"
+      }
+    ]
+  }
+}

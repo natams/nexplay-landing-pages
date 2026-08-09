@@ -1,0 +1,79 @@
+{
+  "seo": {
+    "title": "Interactive Landing Pages | Nathalie Amselem",
+    "description": "Interactive Casino and Sports promotional landing page concepts designed and developed by Nathalie Amselem.",
+    "favicon": "img/icon.svg"
+  },
+
+  "brand": {
+    "name": "NexPlay",
+    "logo": "img/logo.svg",
+    "logoAlt": "NexPlay",
+    "homeUrl": "index.html"
+  },
+
+  "header": {
+    "signup": {
+      "label": "Sign Up",
+      "url": "#"
+    },
+
+    "login": {
+      "label": "Log In",
+      "url": "#"
+    }
+  },
+
+  "hero": {
+    "label": "Home Assignment",
+    "title": "Interactive Landing Pages",
+    "author": "Designed and developed by Nathalie Amselem."
+  },
+
+  "experiences": [
+    {
+      "id": "casino",
+      "label": "Casino",
+      "title": "Make Your Daily Wish",
+      "description": "Spin the wheel and reveal your daily casino reward.",
+      "image": "img/casino-tile.webp",
+      "imageAlt": "Daily casino reward spin wheel",
+      "url": "casino/casino.html",
+      "buttonLabel": "Explore Casino",
+      "ariaLabel": "Open the Casino experience"
+    },
+
+    {
+      "id": "sports",
+      "label": "Sports",
+      "title": "Predict Today’s Winner",
+      "description": "Make your match prediction and reveal a matchday reward.",
+      "image": "img/sports-tile.webp",
+      "imageAlt": "Football player taking a shot under stadium lights",
+      "url": "sports/sports.html",
+      "buttonLabel": "Explore Sports",
+      "ariaLabel": "Open the Sports experience"
+    }
+  ],
+
+  "legal": {
+    "text": "18+ only. Play responsibly. Terms and conditions apply.",
+
+    "links": [
+      {
+        "label": "Terms & Conditions",
+        "url": "terms.html"
+      },
+
+      {
+        "label": "Privacy Policy",
+        "url": "privacy.html"
+      },
+
+      {
+        "label": "Responsible Gaming",
+        "url": "responsible-gaming.html"
+      }
+    ]
+  }
+}
