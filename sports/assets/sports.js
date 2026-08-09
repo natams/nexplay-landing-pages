@@ -7,7 +7,7 @@ const metaDescription = document.querySelector("#metaDescription");
 const siteLogoLink = document.querySelector("#siteLogoLink");
 const siteLogo = document.querySelector("#siteLogo");
 
-const signupLink = document.querySelector("#Link");
+const signupLink = document.querySelector("#signupLink");
 const loginLink = document.querySelector("#loginLink");
 
 const sportsOfferPanel = document.querySelector("#sportsOfferPanel");
