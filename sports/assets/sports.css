@@ -25,7 +25,7 @@
     inset: 0;
     z-index: 0;
     background-image: url("../img/mobile-sports-bg.webp");
-    background-position: center -170px;
+    background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -78,11 +78,11 @@
     max-width: 360px;
     margin: 0 auto;
     color: #fff;
-    font-family: fantasy;
-    font-size: 54px;
-    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: 800;
     line-height: .9;
-    letter-spacing: -.04em;
+    letter-spacing: -4px;
     text-transform: uppercase;
     text-shadow: 0 6px 28px rgba(18, 7, 31, .75);
 }
@@ -115,6 +115,7 @@
     line-height: 1;
     letter-spacing: .03em;
     text-decoration: none;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     transition: transform 140ms ease, filter 140ms ease, opacity 140ms ease;
@@ -194,9 +195,10 @@
 .match-list-heading h2 {
     margin: 0;
     color: #fff;
-    font-family: fantasy;
+    font-family: sans-serif;
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 800;
+    letter-spacing: -3px;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -560,9 +562,10 @@
     max-width: 220px;
     margin: 8px 0;
     color: #fff;
-    font-family: fantasy;
+    font-family: sans-serif;
     font-size: 3em;
-    font-weight: 400;
+    font-weight: 800;
+    letter-spacing: -3px;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -667,11 +670,11 @@
 
 @media (max-width:390px) {
     .sports-offer-panel h1 {
-        font-size: 48px;
+        font-size: 3em;
     }
 
     .sports-match-list-stage {
-        width: 94%;
+        transform: translate(-50%, -50%) scale(0.9) !important;
     }
 
     .sports-reward-stage {
@@ -706,7 +709,7 @@
     .sports-offer-panel h1 {
         width: 480px;
         margin: 0 auto;
-        font-size: 76px;
+        font-size: 4em;
     }
 
     .sports-intro {

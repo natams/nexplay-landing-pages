@@ -3,9 +3,7 @@
 <sub>Casino + Sports promotional landing page concepts created for the home assignment.</sub>
 
 ### Live Demo
-https://natams.github.io/nexplay-landing-pages/
-
-
+https://natams.github.io/nexplay-landing-pages-0/
 
 ## Overview
 
@@ -23,7 +21,19 @@ Built with **HTML, CSS and vanilla JavaScript**.
 
 I kept the project intentionally lightweight and avoided adding frameworks or external libraries that were not necessary for this type of landing page.
 
+## Strategy & Competitors
 
+Before starting the designs, I looked at different casino and sportsbook promotional pages and thought about the mechanics I had also worked with previously at Playtech.
+
+A lot of the competitor pages I reviewed were very offer-led: strong bonus messaging, a CTA and terms. I wanted to keep that clarity, but add a simple interaction before the conversion point so the page feels more connected to the product itself.
+
+For Casino, I chose a wheel because I already knew from previous work that this type of mechanic can generate strong engagement and repeat interaction. It creates anticipation and gives the user a reason to actively participate instead of only reading an offer.
+
+For Sports, I noticed that many sportsbook landing pages focus on the offer, while the actual product experience is based around making choices: selecting matches, teams and outcomes.
+
+That is why I chose a simple **1 / X / 2 prediction mechanic**. It brings a familiar sportsbook action directly into the landing page and makes the experience feel more relevant to the product.
+
+I also kept both mechanics intentionally simple. I wanted the interaction to be understood immediately without adding instructions or making the page feel like a full sportsbook or casino website.
 
 ## Why I used config files
 
@@ -49,11 +59,11 @@ or:
 
 `?variant=B`
 
-
-
 ## Casino
 
-The Casino concept follows a very simple flow:
+### Why I chose a wheel
+
+The wheel is built around one simple flow:
 
 **Spin → reveal reward → claim reward**
 
@@ -83,7 +93,7 @@ For example, once a user opted in to a reward, a tag could be added to their acc
 
 That is how I would expect this mechanic to work once connected to a real user system.
 
-### Logged-in vs logged-out users
+### Logged-in and logged-out users
 
 The CTA would also change based on login state.
 
@@ -101,13 +111,9 @@ Another possible setup would allow a logged-out user to reveal a reward first an
 
 The exact flow would depend on the campaign rules.
 
-
-
 ## Sports
 
-For Sports I wanted a different interaction rather than repeating another random mechanic.
-
-The flow is:
+The Sports flow is:
 
 **Choose match → select 1 / X / 2 → confirm prediction → reveal reward**
 
@@ -117,8 +123,6 @@ The fixtures, odds and rewards are demo content.
 
 <sub>In production, these would normally come from backend services or a live sports data feed.</sub>
 
-
-
 ## Responsive design
 
 Both pages were designed mobile-first and then adapted for larger screens.
@@ -126,8 +130,6 @@ Both pages were designed mobile-first and then adapted for larger screens.
 I also made layout decisions based on the content rather than simply stretching the mobile version.
 
 For example, the Sports match cards keep the odds aligned even when longer team names wrap onto two lines.
-
-
 
 ## Fonts and external libraries
 
@@ -140,8 +142,6 @@ For the demo I used browser and system-available fonts and created the visual hi
 <sub>In a real work task I would use the approved brand fonts and load them according to the brand and technical requirements of the product.</sub>
 
 The same approach applies to JavaScript libraries. If vanilla JavaScript and CSS were enough, I preferred not to add another dependency.
-
-
 
 ## Accessibility and interaction
 
@@ -157,13 +157,11 @@ I included:
 
 <sub>A production release would still go through full keyboard, screen-reader and accessibility QA.</sub>
 
+## Next Steps
 
+If this was moving into production, the next step would be connecting the front end to real operator systems.
 
-## Production setup
-
-This demo uses local JSON and client-side state only.
-
-In production I would expect it to connect to systems for:
+That would include:
 
 - authentication
 - player eligibility
@@ -175,7 +173,9 @@ In production I would expect it to connect to systems for:
 - compliance content
 - analytics
 
-The important interaction events I would want to track include:
+The CTA and interaction state could then change depending on whether the user is logged in, eligible or has already completed the promotion.
+
+I would also track the main interaction events, for example:
 
 `spin_started`  
 `reward_revealed`  
@@ -183,8 +183,6 @@ The important interaction events I would want to track include:
 `prediction_confirmed`  
 `claim_clicked`  
 `login_clicked`
-
-
 
 ## Final note
 

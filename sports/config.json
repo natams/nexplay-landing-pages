@@ -14,7 +14,7 @@
   "header": {
     "signup": {
       "label": "Sign Up",
-      "url": "#signup"
+      "url": "#"
     },
     "login": {
       "label": "Log In",
@@ -182,7 +182,7 @@
     "label": "Your Matchday Reward",
     "predictionLabel": "Your Prediction",
     "claimButton": "Claim Now",
-    "claimUrl": "#signup",
+    "claimUrl": "#",
     "terms": "Eligibility and promotional terms apply. 18+.",
     "ticketImage": "img/reward-ticket.webp",
     "particlesImage": "img/reward-particles.webp"

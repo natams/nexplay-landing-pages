@@ -14,7 +14,7 @@
   "header": {
     "signup": {
       "label": "Sign Up",
-      "url": "#signup"
+      "url": "#"
     },
 
     "login": {

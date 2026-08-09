@@ -7,7 +7,7 @@ const metaDescription = document.querySelector("#metaDescription");
 const siteLogoLink = document.querySelector("#siteLogoLink");
 const siteLogo = document.querySelector("#siteLogo");
 
-const signupLink = document.querySelector("#signupLink");
+const signupLink = document.querySelector("#Link");
 const loginLink = document.querySelector("#loginLink");
 
 const preHeader = document.querySelector("#preHeader");
@@ -209,7 +209,7 @@ function applyHeader() {
 
     signupLink.href =
       config.header?.signup?.url ||
-      "#signup";
+      "#";
   }
 
   if (loginLink) {
