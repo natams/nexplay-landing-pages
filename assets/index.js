@@ -141,8 +141,15 @@ function renderExperiences() {
         image.className = "experience-image";
         image.src = experience.image;
         image.alt = experience.imageAlt || "";
-        image.width = 1200;
-        image.height = 650;
+        image.width = 800;
+        image.height = 444;
+
+        if (experience.id === "casino") {
+            image.fetchPriority = "high";
+            image.loading = "eager";
+        } else {
+            image.loading = "lazy";
+        }
 
         imageLink.appendChild(image);
 

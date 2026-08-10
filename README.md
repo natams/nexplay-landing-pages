@@ -175,13 +175,15 @@ That would include:
 
 The CTA and interaction state could then change depending on whether the user is logged in, eligible or has already completed the promotion.
 
+Before release, I would run a full QA pass in a staging environment, including responsive testing, interaction states, accessibility, cross-browser checks and validation of the connected user and campaign logic.
+
 I would also track the main interaction events, for example:
 
-`spin_started`  
-`reward_revealed`  
-`prediction_selected`  
-`prediction_confirmed`  
-`claim_clicked`  
+`spin_started`
+`reward_revealed`
+`prediction_selected`
+`prediction_confirmed`
+`claim_clicked`
 `login_clicked`
 
 ## Final note
