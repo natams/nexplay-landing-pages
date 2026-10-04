@@ -287,12 +287,11 @@ img {
 }
 
 .experience-grid {
-    display:grid;
-    width:100%;
-    max-width:1000px;
-    min-height:1050px;
-    margin:0 auto;
-    gap:20px;
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
 .experience-card {
@@ -300,20 +299,15 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     background: #160822;
-    box-shadow:
-        0 22px 55px rgba(0, 0, 0, 0.36);
-    transition:
-        transform 180ms ease,
-        border-color 180ms ease,
-        box-shadow 180ms ease;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.36);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    padding: 10px 0px;
 }
 
 .experience-card:hover {
     transform: translateY(-5px);
     border-color: rgba(255, 79, 163, 0.45);
-    box-shadow:
-        0 28px 65px rgba(0, 0, 0, 0.46),
-        0 0 28px rgba(157, 0, 255, 0.14);
+    box-shadow: 0 28px 65px rgba(0, 0, 0, 0.46), 0 0 28px rgba(157, 0, 255, 0.14);
 }
 
 .experience-image-link {
@@ -451,9 +445,9 @@ img {
     }
 
     .experience-grid {
-        grid-template-columns:1fr 1fr;
-        min-height:430px;
-        transform:scale(0.9);
+        grid-template-columns: 1fr 1fr;
+        min-height: 430px;
+        transform: scale(0.9);
     }
 
     .experience-image {
@@ -461,7 +455,7 @@ img {
     }
 
     .experience-card-content {
-padding: 10px 20px 16px;
+        padding: 10px 20px 16px;
     }
 
     .experience-card h2 {

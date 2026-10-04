@@ -429,7 +429,7 @@
     line-height: 1;
     color: #ffffffcc;
     transition: transform 280ms ease;
-    margin: 0em 0em 0.87em 0em;
+    margin: 0em 0em 0.6em 0em;
 }
 
 .sports-terms-toggle[aria-expanded="true"] .sports-terms-toggle-icon {
@@ -543,11 +543,20 @@
     .offer-stage {
         align-self: center;
         margin-bottom: 0;
-        padding: 44px 36px;
+        padding: 25px 36px;
     }
 
     .offer-stage h1 {
-        font-size: 6em;
+        font-size: 5em;
+    }
+
+    .sports-offer-terms {
+    margin: 0px auto 0;
+    }
+
+    .sports-offer-terms>p,
+    .sports-terms-details p {
+        font-size: 0.8em;
     }
 
     .hero-copy,
@@ -612,41 +621,6 @@
         bottom: -8%;
     }
 }
-
-/* @media (max-width: 420px) {
-    .sports-hero {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .offer-stage {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .pitch-interaction {
-        height: 390px;
-    }
-
-    .goal-zone {
-        width: 90vw;
-        top: 17%;
-    }
-
-    .shot-target {
-        width: 52px;
-    }
-
-    .shot-ball {
-        width: 84px;
-        bottom: 0%;
-    }
-
-    .result-card {
-        width: 83vw;
-        padding: 20px 16px;
-    }
-} */
 
 @media (prefers-reduced-motion: reduce) {
 
