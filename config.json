@@ -46,11 +46,11 @@
     {
       "id": "sports",
       "label": "Sports",
-      "title": "Predict Today’s Winner",
-      "description": "Make your match prediction and reveal a matchday reward.",
-      "image": "img/sports-tile.webp",
+      "title": "BET €10. GET €30.",
+      "description": "Choose your target and unlock the welcome offer.",
+      "image": "img/sports-tile-v2.webp",
       "imageAlt": "Football player taking a shot under stadium lights",
-      "url": "sports/sports.html",
+      "url": "sports/sports-v2.html",
       "buttonLabel": "Explore Sports",
       "ariaLabel": "Open the Sports experience"
     }

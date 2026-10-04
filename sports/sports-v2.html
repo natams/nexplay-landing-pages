@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta id="metaDescription" name="description" content="" />
+    <title>NexPlay Sports</title>
+
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="stylesheet" href="assets/sports-v2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="assets/sports-v2.js" defer></script>
+</head>
+
+<body>
+    <div class="loading-screen" id="loadingScreen" role="status" aria-live="polite" aria-label="Loading experience">
+        <div class="loading-icon-wrapper">
+            <img class="loading-icon" src="img/icon.svg" alt="" width="90" height="90" />
+        </div>
+    </div>
+
+    <main class="sports-page" id="landingPage" aria-hidden="true">
+        <header class="site-header">
+            <a class="site-logo" id="siteLogoLink" href="#" aria-label="NexPlay home">
+                <img id="siteLogo" src="img/logo.svg" alt="NexPlay" width="145" height="40" />
+            </a>
+
+            <nav class="header-actions" aria-label="Account actions">
+                <a class="signup-link" id="signupLink" href="#"></a>
+                <a class="login-link" id="loginLink" href="#"></a>
+            </nav>
+        </header>
+
+        <section class="sports-hero" aria-labelledby="sportsHeadline">
+            <div class="sports-hero-bg" id="sportsHeroBg" aria-hidden="true"></div>
+            <div class="sports-hero-shade" aria-hidden="true"></div>
+            <img class="stadium-lights" id="stadiumLights" src="img/lights.png" alt="" aria-hidden="true" />
+
+            <div class="sports-shell">
+                <section class="offer-stage is-active" id="offerStage">
+                    <p class="eyebrow" id="sportsPreHeader"></p>
+                    <h1 id="sportsHeadline">
+                        <span id="headlineTop"></span>
+                        <strong id="headlineBottom"></strong>
+                    </h1>
+                    <p class="hero-copy" id="sportsIntro"></p>
+                    <button class="primary-cta" id="startButton" type="button"></button>
+                </section>
+
+                <section class="shot-stage" id="shotStage" aria-hidden="true">
+                    <div class="shot-copy">
+                        <p class="eyebrow" id="shotEyebrow"></p>
+                        <h2 id="shotTitle"></h2>
+                        <p id="shotIntro"></p>
+                    </div>
+
+                    <div class="pitch-interaction" id="pitchInteraction">
+                        <div class="goal-zone" id="goalZone" role="group" aria-label="Choose your shot target">
+                            <div class="goal-frame" aria-hidden="true"></div>
+                            <div class="goal-net" aria-hidden="true"></div>
+                            <div class="target-layer" id="targetLayer"></div>
+                        </div>
+
+                        <img class="shot-ball" id="shotBall" src="img/football.png" alt="Football ready to shoot" />
+                        <div class="ball-trail" id="ballTrail" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="shot-controls">
+                        <button class="primary-cta shoot-button sports-button-glow" id="shootButton" type="button" disabled></button>
+                    </div>
+                </section>
+
+                <section class="result-stage" id="resultStage" aria-hidden="true">
+                    <div class="result-card">
+                        <p class="eyebrow" id="resultEyebrow"></p>
+                        <h2 id="resultTitle"></h2>
+                        <p class="result-copy" id="resultCopy"></p>
+                        <a class="primary-cta claim-button" id="claimButton" href="#"></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="sports-offer-terms">
+                <p id="sportsTermsSummary"></p>
+                <button class="sports-terms-toggle" id="sportsTermsToggle" type="button" aria-expanded="false"
+                    aria-controls="sportsTermsDetails" aria-label="Show offer terms">
+                    <span class="sports-terms-toggle-icon" aria-hidden="true">⌄</span>
+                    <span class="sports-terms-toggle-text">Offer terms</span>
+                </button>
+                <div class="sports-terms-details" id="sportsTermsDetails">
+                    <p id="sportsTermsDetailsText"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="legal-footer">
+        <div class="payment-section" aria-label="Supported payment methods">
+            <div class="payment-logos" id="paymentLogos"></div>
+        </div>
+        <p id="legalText"></p>
+        <nav class="legal-links" id="legalLinks" aria-label="Legal links"></nav>
+    </footer>
+</body>
+
+</html>

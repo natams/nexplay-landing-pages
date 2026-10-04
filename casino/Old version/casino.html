@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta id="metaDescription" name="description" content="" />
+
+    <title>NexPlay</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="casino.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body data-page="casino">
+    <div class="loading-screen" id="loadingScreen" role="status" aria-live="polite" aria-label="Loading experience">
+        <div class="loading-icon-wrapper">
+            <img class="loading-icon" id="loadingIcon" src="images/icon.svg" alt="" width="90" height="90" />
+        </div>
+    </div>
+
+    <main class="casino-page" id="landingPage" aria-hidden="true">
+        <header class="site-header">
+            <a class="site-logo" id="siteLogoLink" href="index.html" aria-label="NexPlay home">
+                <img id="siteLogo" src="images/logo.svg" alt="NexPlay" width="145" height="40" />
+            </a>
+            <nav class="header-actions" aria-label="Account actions">
+                <a class="signup-link" id="signupLink" href="signup.html">
+                    Sign Up
+                </a>
+                <a class="login-link" id="loginLink" href="login.html"> Log In </a>
+            </nav>
+        </header>
+
+        <section class="casino-hero" aria-labelledby="casinoHeadline">
+            <div class="casino-hero-image" aria-hidden="true"></div>
+
+            <div class="casino-hero-overlay" aria-hidden="true"></div>
+
+            <div class="casino-content">
+                <div class="offer-panel" id="offerPanel">
+                    <p class="pre-header" id="preHeader"></p>
+
+                    <h1 id="casinoHeadline"></h1>
+
+                    <p class="casino-intro" id="casinoIntro"></p>
+
+                    <button class="reveal-chests-button" id="revealChestsButton" type="button"></button>
+                </div>
+
+                <div class="chests-stage" id="chestsStage" aria-hidden="true">
+                    <p class="chests-instruction" id="chestsInstruction"></p>
+
+                    <div class="chests" id="chests" role="group" aria-label="Choose a reward chest"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="howItWorks" aria-label="How it works"></section>
+    </main>
+
+    <div class="reward-popup" id="rewardPopup" role="dialog" aria-modal="true" aria-hidden="true"
+        aria-labelledby="rewardTitle" aria-describedby="rewardDescription rewardTerms">
+        <div class="reward-popup-backdrop" id="rewardPopupBackdrop" aria-hidden="true"></div>
+
+        <section class="reward-card" id="rewardCard" tabindex="-1">
+            <p class="reward-label" id="rewardLabel"></p>
+            <h2 id="rewardTitle"></h2>
+            <p class="reward-description" id="rewardDescription"></p>
+            <a class="claim-button" id="claimButton" href="signup.html"></a>
+            <p class="reward-terms" id="rewardTerms"></p>
+            <!-- <button class="reward-close" id="rewardClose" type="button" aria-label="Close reward dialog">
+                ×
+            </button> -->
+        </section>
+    </div>
+
+    <footer class="legal-footer">
+
+        <div class="payment-section" aria-label="Supported payment methods">
+            <div class="payment-logos" id="paymentLogos"></div>
+        </div>
+
+        <p id="legalText"></p>
+
+        <nav class="legal-links" id="legalLinks" aria-label="Legal links"></nav>
+    </footer>
+
+    <noscript>
+        This experience requires JavaScript to load its campaign configuration.
+    </noscript>
+</body>
+
+</html>

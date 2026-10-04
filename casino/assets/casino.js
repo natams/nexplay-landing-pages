@@ -344,14 +344,11 @@ async function spinWheel() {
     return;
   }
 
-  interactionLocked =
-    true;
+  interactionLocked = true;
 
-  spinComplete =
-    true;
+  spinComplete = true;
 
-  spinButton.disabled =
-    true;
+  spinButton.disabled = true;
 
   const reward =
     getRandomReward();

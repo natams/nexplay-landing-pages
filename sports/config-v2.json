@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "NexPlay Sports - Bet €10, Get €30 in Free Bets",
+    "description": "New customers: bet €10 and get €30 in free bets with NexPlay Sports. 18+ terms apply."
+  },
+  "brand": {
+    "name": "NexPlay",
+    "logo": "img/logo.svg",
+    "logoAlt": "NexPlay",
+    "homeUrl": "../index.html"
+  },
+  "header": {
+    "signup": {
+      "label": "Sign Up",
+      "url": "#claim"
+    },
+    "login": {
+      "label": "Log In",
+      "url": "#login"
+    }
+  },
+  "campaign": {
+    "preHeader": "NEW CUSTOMER OFFER",
+    "headlineTop": "BET €10",
+    "headlineBottom": "GET €30 IN FREE BETS",
+    "intro": "Place a qualifying €10 bet at minimum odds of 1/1 and get €30 in free bets.",
+    "startButton": "CLAIM OFFER"
+  },
+  "shotGame": {
+    "eyebrow": "WELCOME OFFER",
+    "title": "BET €10. GET €30.",
+    "intro": "Pick a target to activate your free bets.",
+    "targets": [
+      {
+        "id": "top-left",
+        "x": 28,
+        "y": 32
+      },
+      {
+        "id": "top-right",
+        "x": 72,
+        "y": 32
+      },
+      {
+        "id": "bottom-right",
+        "x": 70,
+        "y": 70
+      }
+    ],
+    "shootButton": "PLACE €10 BET",
+    "ariaInstruction": "Choose one of the three goal targets, then place your bet."
+  },
+  "result": {
+    "eyebrow": "GOOOAL!",
+    "title": "€30 IN FREE BETS",
+    "copy": "Welcome offer unlocked. Sign up and place your qualifying €10 bet to claim your free bets.",
+    "claimButton": "CLAIM FREE BETS",
+    "claimUrl": "#claim"
+  },
+  "assets": {
+    "ball": "img/football.webp",
+    "lights": "img/lights.webp"
+  },
+  "offerTerms": {
+    "summary": "18+ only. New customers only. Qualifying bet €10 at min odds 1/1. T&Cs apply.",
+    "details": "Portfolio demonstration only. The offer shown is illustrative and is not a live gambling promotion. A production sportsbook would need to display the operator's full eligibility rules, qualifying bet requirements, free-bet restrictions, expiry dates and responsible-gambling information."
+  },
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "image": "img/visa.webp",
+      "width": 64
+    },
+    {
+      "name": "Mastercard",
+      "image": "img/Mastercard.webp",
+      "width": 48
+    },
+    {
+      "name": "Neteller",
+      "image": "img/neteller.webp",
+      "width": 75
+    },
+    {
+      "name": "Skrill",
+      "image": "img/Skrill.webp",
+      "width": 64
+    },
+    {
+      "name": "Bitcoin",
+      "image": "img/bitcoin.webp",
+      "width": 64
+    }
+  ],
+  "legal": {
+    "text": "18+ only. Gamble responsibly. Terms and conditions apply.",
+    "links": [
+      {
+        "label": "Terms & Conditions",
+        "url": "#terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "url": "#privacy"
+      },
+      {
+        "label": "Responsible Gambling",
+        "url": "#responsible-gambling"
+      }
+    ]
+  }
+}
