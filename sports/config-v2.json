@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "NexPlay Sports - Bet €10, Get €10–€30 in Free Bets",
-    "description": "New customers: place a qualifying €10 bet for a chance to receive €10, €20 or €30 in free bets. Demo only. 18+ terms apply."
+    "title": "NexPlay Sports - Bet €10, Win Up to €30 in Free Bets",
+    "description": "New customers: bet €10 and receive at least €10 in free bets, with a chance to win €20 or €30 in free bets. Demo only. 18+ terms apply."
   },
   "brand": {
     "name": "NexPlay",
@@ -21,10 +21,10 @@
   },
   "campaign": {
     "preHeader": "NEW CUSTOMER OFFER",
-    "headlineTop": "BET €10",
-    "headlineBottom": "GET €10–€30 IN FREE BETS",
-    "intro": "Bet €10 at minimum odds of 1/1 to unlock at least €10 in free bets, with a chance of €20 or €30.",
-    "startButton": "CLAIM OFFER"
+    "headlineTop": "BET €10.",
+    "headlineBottom": "WIN UP TO €30.",
+    "intro": "€10 in free bets guaranteed. Take your shot for a chance to score €20 or €30 in free bets!",
+    "startButton": "TAKE YOUR SHOT"
   },
   "shotGame": {
     "eyebrow": "WELCOME OFFER",
