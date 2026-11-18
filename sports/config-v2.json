@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "NexPlay Sports - Bet €10, Get €30 in Free Bets",
-    "description": "New customers: bet €10 and get €30 in free bets with NexPlay Sports. 18+ terms apply."
+    "title": "NexPlay Sports - Bet €10, Get €10–€30 in Free Bets",
+    "description": "New customers: place a qualifying €10 bet for a chance to receive €10, €20 or €30 in free bets. Demo only. 18+ terms apply."
   },
   "brand": {
     "name": "NexPlay",
@@ -22,14 +22,14 @@
   "campaign": {
     "preHeader": "NEW CUSTOMER OFFER",
     "headlineTop": "BET €10",
-    "headlineBottom": "GET €30 IN FREE BETS",
-    "intro": "Place a qualifying €10 bet at minimum odds of 1/1 and get €30 in free bets.",
+    "headlineBottom": "GET €10–€30 IN FREE BETS",
+    "intro": "Bet €10 at minimum odds of 1/1 to unlock at least €10 in free bets, with a chance of €20 or €30.",
     "startButton": "CLAIM OFFER"
   },
   "shotGame": {
     "eyebrow": "WELCOME OFFER",
-    "title": "BET €10. GET €30.",
-    "intro": "Pick a target to activate your free bets.",
+    "title": "BET €10. WIN €10–€30.",
+    "intro": "Choose a target and take your shot. Every goal reveals a random free-bet reward: €10, €20 or €30.",
     "targets": [
       {
         "id": "top-left",
@@ -48,12 +48,26 @@
       }
     ],
     "shootButton": "PLACE €10 BET",
-    "ariaInstruction": "Choose one of the three goal targets, then place your bet."
+    "ariaInstruction": "Choose one of the three goal targets, then place your bet.",
+    "prizes": [
+      {
+        "amount": 10,
+        "weight": 1
+      },
+      {
+        "amount": 20,
+        "weight": 1
+      },
+      {
+        "amount": 30,
+        "weight": 1
+      }
+    ]
   },
   "result": {
     "eyebrow": "GOOOAL!",
-    "title": "€30 IN FREE BETS",
-    "copy": "Welcome offer unlocked. Sign up and place your qualifying €10 bet to claim your free bets.",
+    "title": "YOUR FREE BETS",
+    "copy": "You unlocked {amount} in free bets! Sign up and place your qualifying €10 bet to claim this illustrative offer.",
     "claimButton": "CLAIM FREE BETS",
     "claimUrl": "#claim"
   },
@@ -62,8 +76,8 @@
     "lights": "img/lights.webp"
   },
   "offerTerms": {
-    "summary": "18+ only. New customers only. Qualifying bet €10 at min odds 1/1. T&Cs apply.",
-    "details": "Portfolio demonstration only. The offer shown is illustrative and is not a live gambling promotion. A production sportsbook would need to display the operator's full eligibility rules, qualifying bet requirements, free-bet restrictions, expiry dates and responsible-gambling information."
+    "summary": "18+ only. Demo only. €10/€20/€30 free-bet outcomes equally likely (1 in 3 each). New customers, qualifying €10 bet at min odds 1/1. T&Cs apply.",
+    "details": "Portfolio demonstration only. The displayed prize is selected randomly in the browser, with a 1-in-3 chance for each of €10, €20 and €30; it is not a real or guaranteed award. Any live gambling promotion must have operator-approved terms, verified eligibility, clear reward probabilities, appropriate responsible-gambling information, and server-side prize allocation and recordkeeping."
   },
   "paymentMethods": [
     {

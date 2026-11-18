@@ -76,6 +76,12 @@ function validateConfig() {
     if (!config?.campaign) throw new Error("Campaign configuration missing");
     if (!config?.shotGame?.targets?.length) throw new Error("Shot targets missing");
     if (!config?.result) throw new Error("Result configuration missing");
+    const prizes = config.shotGame.prizes;
+    if (!Array.isArray(prizes) || prizes.length === 0 ||
+        prizes.some((prize) => !Number.isFinite(prize.amount) || prize.amount <= 0 ||
+            !Number.isFinite(prize.weight) || prize.weight <= 0)) {
+        throw new Error("Valid prize amounts and positive weights are required");
+    }
 }
 
 function applyConfig() {
@@ -185,6 +191,28 @@ function chooseTarget(target, button) {
 }
 
 
+// Demo-only weighted prize selection. For a real promotion, select and
+// persist the reward on a trusted server after eligibility verification.
+function chooseRandomPrize() {
+    const prizes = config.shotGame.prizes;
+    const totalWeight = prizes.reduce((sum, prize) => sum + prize.weight, 0);
+    // Web Crypto is available in modern secure browser contexts (HTTPS).
+    const random = new Uint32Array(1);
+    crypto.getRandomValues(random);
+    let selection = (random[0] / 4294967296) * totalWeight;
+    for (const prize of prizes) {
+        selection -= prize.weight;
+        if (selection < 0) return prize.amount;
+    }
+    return prizes[prizes.length - 1].amount;
+}
+
+function displayPrize(amount) {
+    resultTitle.textContent = `€${amount} IN FREE BETS`;
+    resultCopy.textContent = (config.result.copy || "")
+        .replaceAll("{amount}", `€${amount}`);
+}
+
 function fireGoalConfetti(targetButton) {
     if (typeof confetti !== "function" || !targetButton) return;
 
@@ -236,6 +264,7 @@ async function takeShot() {
     if (interactionLocked || !selectedTarget || !selectedTargetButton) return;
     interactionLocked = true;
     shootButton.disabled = true;
+    const prizeAmount = chooseRandomPrize();
 
     targetLayer.querySelectorAll(".shot-target").forEach((button) => {
         button.disabled = true;
@@ -278,6 +307,7 @@ const animation = shotBall.animate([
     sportsHero.classList.add("is-impact");
 
     await wait(430);
+    displayPrize(prizeAmount);
     switchStage(shotStage, resultStage);
     await wait(500);
 
